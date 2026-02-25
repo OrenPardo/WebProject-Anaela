@@ -5,6 +5,10 @@ const nextConfig = {
   compress:        true,
   poweredByHeader: false,
 
+  experimental: {
+    optimizeCss: true,
+  },
+
   images: {
     formats:         ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
