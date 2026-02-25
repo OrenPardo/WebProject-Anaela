@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import SkipLink from './components/SkipLink';
 import Footer from './components/Footer';
 import { SITE_URL, PHONE_INTL, EMAIL } from './lib/constants';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const heebo = Heebo({
   subsets: ['latin', 'hebrew'],
@@ -84,6 +85,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
