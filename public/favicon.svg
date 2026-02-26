@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" rx="96" fill="#2A6B6B"/>
-  <text x="256" y="365" text-anchor="middle" font-size="340" font-weight="800" fill="white" font-family="system-ui, -apple-system, sans-serif">A</text>
+  <path fill="#fff" fill-rule="evenodd" d="M256 72 L408 440 H336 L296 328 H216 L176 440 H104 Z M256 184 L280 296 H232 Z"/>
 </svg>

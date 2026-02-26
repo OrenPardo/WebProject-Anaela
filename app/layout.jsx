@@ -24,7 +24,6 @@ export const metadata = {
   keywords: ['ניהול ספא', 'הקמת ספא', 'ספא במלון', 'גיוס צוות ספא', 'אנאלה', 'ניהול ספא במלון', 'ספא מקצועי', 'spa management', 'hotel spa'],
   icons: {
     icon: { url: '/favicon.svg', type: 'image/svg+xml' },
-    apple: '/apple-touch-icon.svg',
   },
   openGraph: {
     type: 'website',
