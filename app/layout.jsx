@@ -21,6 +21,7 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
+  keywords: ['ניהול ספא', 'הקמת ספא', 'ספא במלון', 'גיוס צוות ספא', 'אנאלה', 'ניהול ספא במלון', 'ספא מקצועי', 'spa management', 'hotel spa'],
   icons: {
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232A6B6B'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='20' font-weight='bold' fill='white' font-family='sans-serif'%3EA%3C/text%3E%3C/svg%3E",
   },
@@ -51,6 +52,7 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
+  '@id': SITE_URL,
   name: 'אנאלה — שותף לניהול ספא',
   description: 'אנאלה מתכננת, מקימה ומנהלת עבורך את מתחם הספא - מהחדר הריק ועד צוות מקצועי מוסמך ותפריטי טיפולים.',
   url: SITE_URL,
@@ -58,8 +60,11 @@ const jsonLd = {
   email: EMAIL,
   image: `${SITE_URL}/images/spa-treatment.webp`,
   logo: `${SITE_URL}/images/spa-treatment.webp`,
+  address: { '@type': 'PostalAddress', addressCountry: 'IL' },
   areaServed: { '@type': 'Country', name: 'Israel' },
   serviceType: ['ניהול ספא', 'הקמת ספא', 'גיוס והכשרת צוותי ספא'],
+  knowsAbout: ['ניהול ספא במלונות', 'הקמת מתחמי ספא', 'גיוס והכשרת צוותים מקצועיים', 'תפריטי טיפולים'],
+  priceRange: '₪₪',
   inLanguage: 'he',
 };
 

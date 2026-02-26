@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import AccessibilityDialog from './AccessibilityDialog';
 
 export default function Footer() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const triggerRef = useRef(null);
   const year = new Date().getFullYear();
+  const closeDialog = useCallback(() => setIsDialogOpen(false), []);
 
   return (
     <>
@@ -26,7 +27,7 @@ export default function Footer() {
 
       <AccessibilityDialog
         isOpen={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
+        onClose={closeDialog}
         triggerRef={triggerRef}
       />
     </>
